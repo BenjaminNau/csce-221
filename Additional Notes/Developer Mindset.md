@@ -3,7 +3,8 @@
 	- bad software = complex system that doesn't help people much
 - Goal of software design
 	- create systems that can be created and maintained easily for developers and helpful for others
-- Developers that don't understand their work build complex stuff
+- Misunderstanding
+	- Developers that don't understand their work build complex stuff
 	- misunderstanding, complexity, then more misunderstanding
 	- the key difference between a bad and good developer
 - Simplicity
@@ -11,3 +12,12 @@
 	- good developer = doing everything in their power to make code as simple as possible
 	- developers might fall into trap that they think other developers will understand their complex & shit code
 	- you are doing well if other developers can read your code easily
+	- developers who are new to your code need to learn how to parse it
+	- Stupid, dumb simple
+- Complexity
+	- the source of many software failures
+	- adding complexity & scope creep compounds
+	- how to avoid?
+		- know exact purpose of software
+		- write as simple as possible
+		- new feature proposed? evaluate and question them
