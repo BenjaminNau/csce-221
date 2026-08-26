@@ -1,0 +1,13 @@
+- Purpose of software
+	- to help people
+	- bad software = complex system that doesn't help people much
+- Goal of software design
+	- create systems that can be created and maintained easily for developers and helpful for others
+- Developers that don't understand their work build complex stuff
+	- misunderstanding, complexity, then more misunderstanding
+	- the key difference between a bad and good developer
+- Simplicity
+	- bad develop = fails to reduce complexity
+	- good developer = doing everything in their power to make code as simple as possible
+	- developers might fall into trap that they think other developers will understand their complex & shit code
+	- you are doing well if other developers can read your code easily
