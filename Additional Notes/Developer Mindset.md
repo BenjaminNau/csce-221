@@ -21,3 +21,103 @@
 		- know exact purpose of software
 		- write as simple as possible
 		- new feature proposed? evaluate and question them
+	- resist unnecessary change until convinced
+	- control complexity, do not create it
+- Maintenance
+	- undervalued by most developers
+	- thinking about future maintenance is a main responsibility
+	- more important to reduce effort of maintenance than implementation
+- Consistency
+	- code becomes harder to understand the less consistent it is
+	- the best teams have consistency and chemistry
+- Prioritizing
+	- Desirability of change (D): how much do you want the change to happen?
+	- Value of change (V): how much value does the change offer? how much does it help users?
+	- Effort of change (E): how much work will you need to do the change?
+	- D = V / E
+		- directly proportional to value of change
+		- inversely proportional to effort involved
+- Solving Problems
+	- understand the problem
+	- planning; sleep on it to give time to analyze the problem
+	- think before acting
+	- divide the problem into smaller tasks and solve each sub-problem
+- "Good enough" is fine
+	- Perfection is an inhibitor
+	- Start small, improve it, then extend
+	- 1: plan a system that does only addition
+	- 2: implement
+	- 3: improve existing system's design
+	- 4: plan subtraction and repeat step 2 and 3
+	- 5: plan multiplication and repeat step 2 and 3
+	- 6: plan division and repeat step 2 and 3
+- Predictions
+	- being too generic involves a lot of code that is not needed
+	- do not predict the future--be only as generic as you know you need to be at the moment
+- Assumptions
+	- something that you accept as true, although you have no proof
+	- great killers of a software project
+	- causes excess code and bloat
+	- code should be designed on what is known now, not on the future
+- Stop reinventing
+	- only cases when its okay to reinvent the wheel:
+		- need something that doesn't exist
+		- existing "wheels" are bad tech or inadequate
+		- existing "wheels" aren't being maintained
+- Resistance
+	- first reaction to changing requests should be no
+	- unnecessary change increases defects in software
+- Automation
+	- if you can automate, automate
+- Code measurement
+	- a lot of developers measure their software quality based on code lines
+	- most solutions don't require a lot of code
+	- find a balance for spending time reducing code lines and simplicity
+	- small bunch of code that is easy to read and understand
+- Productivity
+	- keep your code base as small as possible
+	- "How can I remove more code?"
+- Testing
+	- add logging in a very early stage to save time
+	- when encountering a bug, first reproduce it
+	- do not guess
+	- committed code should be tested and working
+	- Untested code is the code that doesn't work
+- Underestimation
+	- developer's estimation sucks
+	- most of the time developers underestimate time and effort 
+	- solution:
+		- big things -> smaller things
+		- smaller it is, easier to estimate
+	- Everything takes longer than you think
+- Running away from rewriting
+	- rewriting code is often a developer delusion, not the solution (in most cases)
+	- it is harder to read code than to write it
+	- Refactoring should be the first option
+- Documentation and Commenting
+	- comments should not add comments to say what code is doing, it should be obvious from the code itself
+		- if it is not obvious, the code is not readable
+	- if you cannot make the code simpler, then add a comment to explain the complexity
+	- write comments to explain why, not explain what
+	- have documentation to explain software's architecture, modules, and components
+- Picking technologies
+	- do not depend on external technologies
+	- if you have to, reduce your dependency on them
+	- can kill active development
+	- questions to ask before picking a technology:
+		- Is there active development behind it?
+		- Will it continue to be maintained?
+		- How easy is it to switch away from?
+		- What does the community say about it?
+- Self-Development
+	- keep learning languages, tools, read books on development to get another perspective
+	- be open-minded
+	- every specific problem has its own specific solution
+- Don't be a hero
+	- a lot of times it is better to be a quitter than a hero
+	- sunk cost fallacy
+	- do not be obsessive. know when to quit. don't hesitate to ask for help
+- Don't ask questions... Ask for help
+	- try anything and everything you can think of; this is more important the less comfortable you are with a concept/language
+	- search if you cannot think of anything
+	- after trying everything, now seek advice from peers and senior developers to review code
