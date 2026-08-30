@@ -1,0 +1,20 @@
+- Rules
+	- new -> delete, new[] -> delete[]
+		- mismatching them is undefined behavior
+	- The pointer lives on the stack
+		- Even when it points to the heap
+		- new puts the pointee on the heap
+		- the variable holding the address is a local
+	- new T(5) does not equal new T[5]
+		- parenthesis = one object initialized to 5
+		- brackets = an array of 5, uninitialized
+	- * binds looser than postfix **
+		- ****p++ is *(p++)
+			- it moves the pointer
+		- (****p)++
+			- changes the value
+	- Losing an address = leaking it
+		- reassigning the only pointer to a heap block makes that block unreachable and undeletable
+	- Copying a pointer does not copy the object
+		- After ap = bp there is still one heap object with two names
+		- writing through either is visible both

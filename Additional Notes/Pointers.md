@@ -4,4 +4,31 @@
 	- shows how much memory a given type takes
 	- result is a positive integer, system dependent
 - Definition of a Pointer:
-	- 
+	- a memory address of an object of a specified type
+	- OR a variable which keeps such an address
+- Properties of a Pointer:
+	- a pointer value is the address of the first byte of an object in the memory
+	- points to an object of a given type
+	- does not know about how many bytes it points to
+- int ****iptr*** = &num;
+- Used to:
+	- more complex data types
+	- access arrays and elements
+	- **new[]** operator keep track of allocated memory
+	- **delete[]** to deallocate a block of memory
+- &
+	- address-of operator
+	- returns the address of a variable
+- *
+	- dereferencing operator
+- initialize to either nullptr or to an address of an existing object
+	- TO AVOID RUN-TIME ERRORS
+- new
+	- dynamically allocates memory for an object on the heap
+	- returns a pointer equal to the address of the first byte of that memory
+- delete[] or delete
+	- allocated memory can be returned to the heap by this operator
+- generic pointer
+	- void*
+	- pointer that can be pointed to objects of any data type
+	- cannot dereference a variable of this type
