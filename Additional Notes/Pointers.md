@@ -1,0 +1,7 @@
+- address of an object
+	- the number of the first byte of location of this object in the computer memory
+- sizeof() operator
+	- shows how much memory a given type takes
+	- result is a positive integer, system dependent
+- Definition of a Pointer:
+	- 

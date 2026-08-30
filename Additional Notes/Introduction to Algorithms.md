@@ -28,3 +28,8 @@ Greatest Common Devisors:
 	- Key Lemma
 		- let a' be the remainder when a is divided by b, then:
 			- gcd(a,b) = gcd(a',b) = gcd(b, a')
+	- Euclidean Algorithm
+		- if b = 0:
+			- return a
+		- a' <- the remainder when a is divided by b
+	- Much faster, takes about log(ab) = log(a) + log(b) steps
