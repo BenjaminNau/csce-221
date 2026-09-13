@@ -15,3 +15,6 @@ The move constructor does neither allocate OR free memory; the move constructor 
 Every allocated block has exactly one owner, and is freed once
 - grow(), copy assignment, move assignment: all delete[] the old block before reassigning
 - the constructors: array held uninitialized garbage, so nothing to free
+
+''' address = array + (pos × sizeof(T)) '''
+pure arithmetic done when you do array[pos], no walking. same three operations done for index of 3 or index 999,998. So operator[] is 0(1).
