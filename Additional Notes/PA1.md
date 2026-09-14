@@ -72,5 +72,5 @@ v.push_back(5);
 
 int x = *it;
 
-it would still be pointing to the old block, garbage (we had to call grow() here which allocated new block, moved the elements into it, and then freed the old block)
+it would still be pointing to the old block, garbage (we had to call grow() here which allocated new block, moved the elements into it, and then freed the old blockc)
 '''
