@@ -50,3 +50,27 @@ Inserting at the back, index == _size_, so condition i > index is false immediat
 | Move constructor, move assignment   | O(1)           | Steals the pointer; elements are never touched                                                                                     |
 | `clear`                             | O(1)           | Sets `_size = 0`; buffer and capacity unchanged                                                                                    |
 | `grow` (internal)                   | O(n)           | Moves every existing element to the new block                                                                                      |
+copy = duplicate data
+move = transfer ownership
+
+
+
+Blanking other.array to nullptr fixes double freeing because delete[] nullptr is defined to do nothing. 
+
+Overall, assignment cleans up first. Construction has nothing to clean.
+
+'''
+Vector<int> v;
+v.push_back(1);
+v.push_back(2);
+v.push_back(3);   // capacity is now 4
+
+Vector<int>::iterator it = v.begin() + 1;
+
+v.push_back(4);
+v.push_back(5);
+
+int x = *it;
+
+it would still be pointing to the old block, garbage (we had to call grow() here which allocated new block, moved the elements into it, and then **freed the old block**)
+'''
