@@ -1,0 +1,8 @@
+- walk through array, comparing each adjacent pair; swap if out of order. After one full pass the largest element has "bubbled" to the end/top. Repeat
+- WITH EARLY EXIT CHECK (stop when a pass makes zero swaps):
+	- already-sorted input finishes after ONE clean pass, O(n)
+- WITHOUT EARLY EXIT CHECK:
+	- it always does all n passes, O(n^2)
+- worst case: reverse sorted, O(n^2) no matter what
+- stable
+- adaptive only with an early exit

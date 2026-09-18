@@ -1,0 +1,5 @@
+- walk left to right, compare each element with target
+- works on unsorted data
+- best case: 1 comparison, target at index 0, O(1)
+- worst case: n comparisons, target at last or absent, O(n)
+- average case: ~n/2 comparisons, still O(n)

@@ -1,0 +1,5 @@
+- look in middle; if target is smaller, discard the right half, else discard the left half; repeat
+- the array MUST be sorted
+- best case: 1 comparison, target is the middle element, O(1)
+- worst case: ~log(n) comparisons, O(log(n))
+- doubling the array size adds one comparison

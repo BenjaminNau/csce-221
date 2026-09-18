@@ -1,0 +1,2 @@
+- a generalization of insertion sort. Instead of comparing adjacent elements, it compares elements a gap apart (e.g., every 5th), sorts those, then shrinks the gap, ending with gap = 1(a normal insertion sort, but on a nearly-sorted array by then). The big gaps move elements a long way early, which kills the "slide on position at a time" bottleneck.
+- WORST CASE depends on the gap sequence chosen, not guaranteed O(n log(n)).

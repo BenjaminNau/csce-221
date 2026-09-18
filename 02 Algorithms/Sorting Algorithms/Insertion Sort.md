@@ -1,0 +1,4 @@
+- take the next element and slide it leftward past everything bigger, until it lands in its correct spot in the already-sorted prefix. Like sorting a hand of cards.
+- Already sorted, each element is compared once to its left neighbour, sees its bigger, and stops, O(n), BEST CASE
+- Reverse sorted, each element slides all the way to the front, O(n^2)
+- Stable. Adaptive. Good on nearly-sorted data.

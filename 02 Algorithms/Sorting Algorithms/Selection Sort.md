@@ -1,0 +1,5 @@
+- scanning unsorted portion for smallest remaining element, then swapping it into place, repeating n-1 times
+- worst case: O(n^2)
+- best case: O(n^2)
+- NOT adaptive
+- NOT stable in usual implementation

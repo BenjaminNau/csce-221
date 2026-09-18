@@ -1,0 +1,2 @@
+- sort by the ones digit using a stable counting sort, then by the tens digit, then hundreds, etc.
+- stability makes it work, sorting by tens preserves the ones-digit order within ties

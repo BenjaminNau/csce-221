@@ -1,0 +1,1 @@
+- you know the values are integers in range O..k. Make a count array of size k. Walk the input, tallying how many times each value appears. Then walk the count array and write out each value that many times.
